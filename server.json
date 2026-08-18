@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ajprolific/waqi",
+  "title": "Waqi",
+  "description": "Hosted MCP proxy that redacts PII from Stripe, Xero, CRM and other business tools before the AI sees them, with a provable audit log of every catch.",
+  "version": "1.0.0",
+  "websiteUrl": "https://bilazann.com/waqi",
+  "repository": {
+    "url": "https://github.com/ajprolific/waqi-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://waqi.bilazann.com/api/mcp/{token}",
+      "variables": {
+        "token": {
+          "description": "Your personal Waqi MCP token — generate it in the dashboard at waqi.bilazann.com after signing up at bilazann.com/waqi",
+          "isRequired": true
+        }
+      }
+    }
+  ]
+}
