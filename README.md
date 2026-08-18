@@ -42,6 +42,19 @@ claude mcp add --transport http waqi https://waqi.bilazann.com/api/mcp/YOUR_TOKE
 
 **ChatGPT:** Settings → Connectors → *Advanced* → *Developer mode* → add the same URL.
 
+**Standard MCP configuration** (for clients that use a JSON config file):
+
+```json
+{
+  "mcpServers": {
+    "waqi": {
+      "type": "http",
+      "url": "https://waqi.bilazann.com/api/mcp/YOUR_TOKEN"
+    }
+  }
+}
+```
+
 Step-by-step guides with screenshots for every client and every connector: [bilazann.com/waqi/docs](https://bilazann.com/waqi/docs).
 
 > Tip: in Claude, an attached connector still has to be **enabled in the chat** you're using — if tools list but never run, that's the switch to check.
